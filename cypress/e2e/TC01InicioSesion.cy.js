@@ -20,7 +20,7 @@ describe('TC01: Inicio de Sesión', () => {
         cy.get('#password').should('be.visible')
 
         // Validar que los valores igresados sean correctos
-        cy.get('#email').type('elitecatering@gmail.com')
+        cy.get('#email').type('elitecateringservice@gmail.com')
         cy.get('#password').type('12345678')
 
         // Validar estilos del boton de inicio de sesión
