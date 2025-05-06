@@ -1,5 +1,5 @@
 describe('TC01: Inicio de Sesión', () => {
-    it('Debería iniciar sesión correctamente y validar elementos', () => {
+    it('Debería validar elementos y dar un mensaje de ingreso exitoso', () => {
         // Visitar la URL principal
         cy.visit('https://elitecatering.netlify.app/')
         
