@@ -19,7 +19,7 @@ describe('TC02: Solicitud de Servicio', () => {
         //Llenar email 
         cy.get('#email').type('juan@gmail.com')
         //Llenar fecha
-        cy.get('#fechaEvento').type('2023-10-11')
+        cy.get('#fechaEvento').type('2023-10-12')
         //LLenar Tipo de Evento
         cy.get('#tipoEvento').select('Boda')
         //Llenar Hora 
