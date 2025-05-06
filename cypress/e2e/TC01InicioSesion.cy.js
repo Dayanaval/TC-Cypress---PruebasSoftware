@@ -7,7 +7,7 @@ describe('TC01: Inicio de Sesión', () => {
         cy.url().should('eq', 'https://elitecatering.netlify.app/')
 
         //Validar que el título de la página sea correcto
-        cy.get('h1')
+        cy.get('h1').should('have.text', 'Elite Catering Service')
 
         // Hacer clic en el botón de inicio de sesión
         cy.contains('Iniciar Sesión').click()
@@ -29,7 +29,8 @@ describe('TC01: Inicio de Sesión', () => {
         // Hacer clic en el botón de inicio de sesión
         cy.get('button[type="submit"]').click()
 
-
-
+        //Validar mensaje de bienvenida
+        cy.get('#mensajeBienvenida').should('be.visible')
+        cy.get('#mensajeBienvenida').should('have.text', 'Inicio de Sesion Exitoso: ¡Bienvenido a Elite Catering Service!')
     })
 })
