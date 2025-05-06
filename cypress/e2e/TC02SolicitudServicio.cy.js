@@ -15,7 +15,7 @@ describe('TC02: Solicitud de Servicio', () => {
         // Llenar el nombre
         cy.get('#nombreCliente').type('Juan Perez')
         //Llenar el telefono
-        cy.get('#telefono').type('123456789')
+        cy.get('#telefono').type('1234567899')
         //Llenar email 
         cy.get('#email').type('juan@gmail.com')
         //Llenar fecha
