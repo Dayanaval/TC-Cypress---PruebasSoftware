@@ -35,8 +35,6 @@ describe('TC01: Inicio de Sesión', () => {
         // PASO 10: Hacer clic en el botón de inicio de sesión
         cy.get('button[type="submit"]').click()
 
-        cy.get('.btnRegistro > a').click
-
         // PASO 11: Validar mensaje de bienvenida
         cy.get('#mensajeBienvenida').should('be.visible')
         cy.get('#mensajeBienvenida').should('have.text', 'Inicio de Sesión Exitoso')
